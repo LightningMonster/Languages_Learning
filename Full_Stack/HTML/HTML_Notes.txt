@@ -41,7 +41,8 @@ Example:
 
 <!DOCTYPE html> <!-- Declares the document type as HTML5. It tells the browser how to interpret the document. -->
 <html> <!-- The root element of the HTML document. All other elements are nested inside it. -->
-<head> <!-- Contains meta-information about the document like title, scripts, and styles. This section is not visible on the webpage. -->
+<head> <!-- Contains meta-information about the document like title, scripts, and styles. 
+            This section is not visible on the webpage. -->
     <title>Page Title</title> <!-- Defines the title displayed on the browser tab. -->
 </head>
 <body> <!-- Contains all the content that will be visible on the webpage. -->
@@ -50,7 +51,7 @@ Example:
 </body>
 </html>
 
-#-----
+#--------------------------------------
 Comments in HTML
 
 Definition:
@@ -60,3 +61,157 @@ Comments in HTML are used to add notes or
 Syntax:
     <!-- This is a comment -->
 
+#----------------------------
+HTML is not case sensitive
+#----------------------------
+
+Heading Tags:
+
+*Definition:
+    Heading tags in HTML are used to define headings on a webpage. 
+    They range from <h1> (highest importance) to <h6> (lowest importance).
+
+*Syntax:
+
+html
+Copy code
+<h1>This is a heading</h1>
+
+*Available Tags:
+
+<h1>: Main heading, typically the largest and most important.
+<h2>: Subheading, used for sections.
+<h3>: Smaller subheading, used for subsections.
+<h4>, <h5>, <h6>: Used for further sub-levels of headings.
+
+*Example:
+
+<h1>Main Heading</h1>
+<h2>Subheading 1</h2>
+<h3>Subsection 1.1</h3>
+<h4>Sub-subsection 1.1.1</h4>
+<h5>Details</h5>
+<h6>Footnotes</h6>
+
+*Appearance:
+
+Browsers automatically style headings with decreasing font sizes from <h1> to <h6>.
+Example of sizes:
+<h1>: Largest
+<h6>: Smallest
+
+#-----------------------------
+
+Definition:
+    The anchor tag (<a>) is used to create hyperlinks, 
+    allowing users to navigate to other pages, sections, or external resources.
+
+Syntax:
+
+<a href="URL">Link Text</a>
+
+*Attributes:
+
+href: Specifies the URL of the link destination.
+
+Example:
+    <a href="https://example.com">Visit Example</a>
+
+**
+target: Defines how the link is opened.
+    _self (default): Opens in the same tab.
+    _blank: Opens in a new tab.
+
+Example:
+    <a href="https://example.com" target="_blank">Open in New Tab</a>
+
+**
+title: Adds a tooltip that appears when the user hovers over the link.
+
+Example:
+    <a href="https://example.com" title="Go to Example">Hover Me</a>
+
+**
+rel: Specifies the relationship between the current document and the linked resource.
+Example:
+    <a href="https://example.com" rel="nofollow">NoFollow Link</a>
+
+**
+Linking to Different Locations:
+
+External URL:
+    <a href="https://google.com">Google</a>
+
+Internal Page:
+    <a href="about.html">About Us</a>
+
+**
+Section on the Same Page:
+Use an id for the target section:
+
+<a href="#section1">Go to Section 1</a>
+<h2 id="section1">Section 1</h2>
+
+Example:
+    <a href="https://google.com" target="_blank" title="Visit Google">Visit Google</a>
+
+
+#------------------------
+Image Tag:
+
+Definition:
+    The <img> tag is used to embed images in a webpage.
+
+Syntax:
+    <img src="image_url" alt="description" title="Hover Tooltip" width="300" height="150">
+
+
+#---------------------------------
+Horizontal Rule Tag (<hr>)
+    Tag: <hr>
+    Purpose: Creates a horizontal rule, used to separate sections on a webpage.
+
+#----------------------------------
+Subscript and Superscript Tags in HTML
+
+Subscript:
+    Tag: <sub>
+    Purpose: Displays text slightly below the normal line of text, commonly used for mathematical notation (e.g., chemical formulas).
+Example:
+    H<sub>2</sub>O
+
+Superscript:
+    Tag: <sup>
+    Purpose: Displays text slightly above the normal line of text, commonly used for exponents or footnotes.
+Example:
+    x<sup>2</sup>
+
+Combined Example:
+
+You can use both tags together:
+    E<sub>m</sub><sup>c</sup><sub>2</sub>
+
+#------------------------------------
+*<big> and <small> Tags in HTML
+
+<big>:
+    Purpose: Increases the font size of the text.
+    Tag: <big>Text</big>
+    Example:
+        <big>This text is bigger</big>
+
+<small>:
+    Purpose: Decreases the font size of the text.
+    Tag: <small>Text</small>
+    Example:
+        <small>This text is smaller</small>
+
+#-------------------------------------
+Purpose:
+The <pre> tag in HTML is used to display preformatted text. 
+This means that the text will be displayed exactly as it is written in the HTML file, including spaces, new lines, and tabs.
+
+Syntax:
+    <pre>Text content with spaces and line breaks</pre>
+
+#-------------------------------------
