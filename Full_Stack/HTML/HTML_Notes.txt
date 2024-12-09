@@ -1,0 +1,62 @@
+#...HTML Tutorial for Beginners...#
+
+*html (Hyper text markup language): Structure & layout
+*css: style
+*JS: Logic 
+
+#-------
+html tags
+
+*Definition:
+    HTML tags are elements used to define the structure and content of a web page. 
+    They are enclosed in angle brackets (< >).
+
+*Syntax:
+    <tagname>Content</tagname>
+
+*Types of Tags:
+
+Paired Tags: Have an opening and closing tag.
+    Example: <h1>Title</h1>
+
+Self-Closing Tags: Do not have a closing tag.
+    Example: <img src="image.jpg" />
+
+*Common Tags:
+
+Structural Tags: <html>, <head>, <body>
+Heading Tags: <h1> to <h6>
+Text Formatting: <p>, <b>, <i>, <u>
+Link: <a href="url">
+Image: <img src="url" alt="description">
+List: <ul>, <ol>, <li>
+Table: <table>, <tr>, <td>
+
+*Attributes:
+Tags can have attributes to provide additional information.
+Example:
+    <a href="https://example.com" target="_blank">Visit</a>
+
+*Basic Code:
+
+<!DOCTYPE html> <!-- Declares the document type as HTML5. It tells the browser how to interpret the document. -->
+<html> <!-- The root element of the HTML document. All other elements are nested inside it. -->
+<head> <!-- Contains meta-information about the document like title, scripts, and styles. This section is not visible on the webpage. -->
+    <title>Page Title</title> <!-- Defines the title displayed on the browser tab. -->
+</head>
+<body> <!-- Contains all the content that will be visible on the webpage. -->
+    <h1>Welcome to My Page</h1> <!-- Displays a main heading. 'h1' is the largest heading tag. -->
+    <p>This is a paragraph of text.</p> <!-- Displays a block of text as a paragraph. -->
+</body>
+</html>
+
+#-----
+Comments in HTML
+
+Definition:
+Comments in HTML are used to add notes or
+    explanations in the code that are not displayed on the webpage.
+
+Syntax:
+    <!-- This is a comment -->
+
