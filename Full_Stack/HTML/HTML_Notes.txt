@@ -215,3 +215,67 @@ Syntax:
     <pre>Text content with spaces and line breaks</pre>
 
 #-------------------------------------
+
+*Semantic HTML Tags
+
+Semantic HTML tags are those that have a clear and meaningful role in the structure and content of a webpage. 
+They help search engines, browsers, and screen readers understand the purpose of different elements on a page. 
+Using semantic tags improves the accessibility and SEO of a website.
+
+*Semantic HTML Tags:
+
+**
+<header>: Defines the header content for a document or section. 
+    Typically contains a logo, navigation, and other introductory content.
+
+example:
+<header>
+    <h1>Website Title</h1>
+    <nav>...</nav>
+</header>
+
+**
+<nav>: Defines navigation links. It is used for navigational links to other pages within the same site.
+
+example:
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+**
+<article>: Represents a self-contained piece of content, such as a blog post, news item, or comment.
+
+example:
+<article>
+    <h2>Article Title</h2>
+    <p>Content goes here...</p>
+</article>
+
+**
+<section>: Defines a thematic section within a document, such as a group of related articles or topics.
+
+example:
+<section>
+    <h2>Section Title</h2>
+    <p>Content of the section...</p>
+</section>
+
+**
+<footer>: Defines the footer content of a document or section, such as contact information or copyright details.
+
+example:
+<footer>
+    <p>&copy; 2024 Your Company</p>
+</footer>
+
+**
+<aside>: Represents content that is tangentially related to the main content, like sidebars or ads.
+
+example:
+<aside>
+    <p>Related links...</p>
+</aside>
