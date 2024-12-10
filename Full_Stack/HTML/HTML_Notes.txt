@@ -279,4 +279,17 @@ example:
 <aside>
     <p>Related links...</p>
 </aside>
-.
+#------------------------------------------
+<aside> Tag in HTML
+
+Purpose:
+The <aside> tag is used to represent content that is tangentially related to the main content of a webpage. It is often used for sidebars, pull quotes, ads, or supplementary information.
+
+Characteristics:
+    Content inside <aside> is not the main focus of the page but adds contextual or related information.
+    Commonly placed alongside the main content.
+
+Syntax:
+<aside>
+    <!-- Content goes here -->
+</aside>
