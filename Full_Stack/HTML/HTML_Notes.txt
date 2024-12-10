@@ -293,3 +293,430 @@ Syntax:
 <aside>
     <!-- Content goes here -->
 </aside>
+
+#-----------------------------------------
+<div> Tag in HTML
+Purpose:
+    The <div> tag is a container element used to group other HTML elements together, 
+    primarily for layout and styling purposes. It has no semantic meaning on its own.
+
+Characteristics:
+    A block-level element that takes up the full width of its container.
+    Used to organize content into sections for CSS styling or JavaScript manipulation.
+
+Syntax:
+    <div>
+        <!-- Content goes here -->
+    </div>
+
+#-------------------------------------------
+
+<span> Tag in HTML
+Purpose:
+    The <span> tag is an inline container used to group text or inline elements for styling or scripting purposes. It has no semantic meaning on its own.
+
+Characteristics:
+    An inline element (does not create a new line).
+    Useful for applying styles or JavaScript to specific parts of text or inline content.
+
+Syntax:
+    <span>
+        <!-- Content goes here -->
+    </span>
+
+#----------------------------------------
+
+Unordered List in HTML
+Purpose:
+    The <ul> tag is used to create an unordered list, where list items are marked with bullet points by default.
+
+Syntax:
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+Attributes:
+type (deprecated): Specifies the type of bullet (not commonly used in modern HTML). Examples include:
+    type="circle"
+    type="square"
+
+Example:
+<ul type="square">
+    <li>Item A</li>
+    <li>Item B</li>
+</ul>
+
+#--------------------------------------
+Ordered List in HTML
+Purpose:
+    The <ol> tag is used to create an ordered list where items are automatically numbered or labeled sequentially.
+
+Syntax:
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+Attributes:
+
+type: Specifies the numbering style.
+
+type="1": Default numbering (1, 2, 3, ...).
+type="A": Uppercase letters (A, B, C, ...).
+type="a": Lowercase letters (a, b, c, ...).
+type="I": Uppercase Roman numerals (I, II, III, ...).
+type="i": Lowercase Roman numerals (i, ii, iii, ...).
+
+Example:
+<ol type="A">
+    <li>First Choice</li>
+    <li>Second Choice</li>
+</ol>
+
+#----------------------------------------
+Tables in HTML
+Purpose:
+    HTML tables are used to display data in rows and columns, similar to a spreadsheet.
+
+Syntax:
+<table>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+</table>
+
+Key Tags:
+
+<table>: Defines the table container.
+<tr>: Defines a table row.
+<th>: Defines a header cell (bold and centered by default).
+<td>: Defines a standard table cell.
+
+
+Example:
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>25</td>
+        <td>New York</td>
+    </tr>
+    <tr>
+        <td>Bob</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+    </tr>
+</table>
+
+Output:
+
+Name	Age	City
+Alice	25	New York
+Bob	30	Los Angeles
+
+Attributes:
+border: Specifies the border width (deprecated in modern HTML; use CSS).
+
+<table border="1"></table>
+cellpadding: Adds space inside cells (deprecated; use CSS).
+cellspacing: Adds space between cells (deprecated; use CSS).
+
+
+Caption for Tables:
+<table>
+    <caption>Student Data</caption>
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>John</td>
+    </tr>
+</table>
+
+#-----------------------------------
+<thead> and <tbody> Tags in HTML
+
+Purpose:
+    <thead>: Groups the header content of a table.
+    <tbody>: Groups the main body content of a table.
+
+Why Use Them?
+    To improve the structure and readability of tables.
+    Enables better accessibility and compatibility with screen readers.
+    Helps with consistent styling and layout.
+
+Syntax:
+<table>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </tbody>
+</table>
+
+#--------------------------------------
+colspan and rowspan in HTML Tables
+
+Purpose:
+    colspan: Combines multiple columns into a single cell.
+    rowspan: Combines multiple rows into a single cell.
+
+Attributes:
+    colspan="number": Specifies the number of columns a cell spans.
+    rowspan="number": Specifies the number of rows a cell spans.
+
+colspan Example:
+
+<table border="1">
+    <tr>
+        <th colspan="3">Combined Header</th>
+    </tr>
+    <tr>
+        <td>Row 1, Col 1</td>
+        <td>Row 1, Col 2</td>
+        <td>Row 1, Col 3</td>
+    </tr>
+</table>
+
+rowspan Example:
+
+<table border="1">
+    <tr>
+        <td rowspan="2">Combined Row</td>
+        <td>Row 1, Col 2</td>
+    </tr>
+    <tr>
+        <td>Row 2, Col 2</td>
+    </tr>
+</table>
+
+#----------------------------------------------------
+Forms in HTML
+Purpose:
+    The <form> element is used to collect user input and submit it to a server for processing.
+
+Basic Syntax:
+
+<form action="submit.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+
+Explanation:
+<form>: The container for all form elements.
+action: The URL where the form data is sent.
+method: Specifies how data is sent (GET or POST).
+    Form Elements:
+<label>: Describes the input field for accessibility.
+<input>: Collects user data.
+type="text": Single-line text input.
+type="email": Validates email format.
+<button>: A clickable button to submit or reset the form.
+
+Example with Various Input Types:
+
+<form action="submit.php" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male"> Male
+    <input type="radio" id="female" name="gender" value="female"> Female
+    <br>
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id="reading" name="hobbies" value="Reading"> Reading
+    <input type="checkbox" id="traveling" name="hobbies" value="Traveling"> Traveling
+    <br>
+    <label for="city">City:</label>
+    <select id="city" name="city">
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option>
+        <option value="bangalore">Bangalore</option>
+    </select>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+Form Elements:
+Text Inputs:
+
+type="text", type="password", type="email", type="number", type="date", etc.
+Radio Buttons:
+
+Allows single selection.
+
+<input type="radio" name="option" value="A"> Option A
+<input type="radio" name="option" value="B"> Option B
+
+Checkboxes:
+Allows multiple selections.
+
+<input type="checkbox" name="feature" value="Feature1"> Feature 1
+<input type="checkbox" name="feature" value="Feature2"> Feature 2
+
+Drop-downs:
+
+<select name="dropdown">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+</select>
+
+Buttons:
+
+type="submit": Submits the form.
+type="reset": Resets form fields to default values.
+
+#-------------------------------------------------
+Class and ID in HTML
+    Classes and IDs are attributes used to identify and style HTML elements. 
+    They are essential for applying CSS and JavaScript.
+
+#Class Attribute
+Purpose:
+    Defines a group of elements with the same styling or behavior.
+    Can be applied to multiple elements.
+
+Syntax:
+    <element class="class-name">Content</element>
+
+Example:
+    <div class="highlight">This is highlighted.</div>
+    <p class="highlight">This paragraph is also highlighted.</p>
+
+
+#ID Attribute
+Purpose:
+    Uniquely identifies a single element.
+    Meant for specific styling or JavaScript interactions.
+
+Syntax:
+    <element id="id-name">Content</element>
+
+Example:
+    <h1 id="main-heading">This is the main heading</h1>
+
+
+Difference Between Class and ID:
+
+Feature	           | Class	                               | ID
+Usage	           | For multiple elements.	               | For a single element.
+Prefix in CSS	   | . (dot)	                           | # (hash)
+Example in CSS	   | .classname {}	                       | #idname {}
+Use in JavaScript  | document.querySelector('.classname')  | document.getElementById('idname')
+
+#------------------------------------------------------
+
+<iframe> Tag in HTML
+    The <iframe> tag embeds another HTML document within the current HTML page.
+
+Syntax:
+    <iframe src="URL" width="width" height="height"></iframe>
+
+Attributes:
+
+src: Specifies the URL of the page to embed.
+width: Specifies the width of the iframe.
+height: Specifies the height of the iframe.
+title: Provides a brief description for accessibility.
+frameborder: Sets the border thickness (deprecated in HTML5, use CSS instead).
+allowfullscreen: Allows the iframe content to be displayed in fullscreen mode.
+loading: Controls when the iframe loads:
+    lazy: Loads the iframe only when it comes into view.
+    eager: Loads immediately.
+
+
+Example with YouTube Video:
+
+<iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    width="560" 
+    height="315" 
+    allowfullscreen 
+    title="YouTube Video">
+</iframe>
+
+#-------------------------------------------------------
+
+<video> Tag in HTML
+    The <video> tag is used to embed video content in an HTML document.
+
+Syntax:
+    <video src="video.mp4" width="width" height="height" controls>
+        Your browser does not support the video tag.
+    </video>
+
+Attributes:
+
+src: The file path or URL of the video.
+controls: Adds playback controls like play, pause, volume, etc.
+autoplay: Starts the video automatically when the page loads.
+loop: Makes the video replay automatically when it ends.
+muted: Mutes the video by default.
+poster: Specifies an image to display before the video starts playing.
+width and height: Specifies the dimensions of the video player.
+
+Basic Example:
+    <video src="example.mp4" width="600" height="400" controls>
+        Your browser does not support the video tag.
+    </video>
+
+Example with Multiple Sources:
+<video width="600" height="400" controls>
+    <source src="example.mp4" type="video/mp4">
+    <source src="example.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+
+Why use multiple sources?
+To provide compatibility with different browsers.
+
+Example with Autoplay, Loop, and Muted:
+    <video src="example.mp4" width="600" height="400" autoplay loop muted>
+        Your browser does not support the video tag.
+    </video>
+Note: Some browsers require muted for autoplay to work.
+
+Using the poster Attribute:
+    <video src="example.mp4" width="600" height="400" controls poster="thumbnail.jpg">
+        Your browser does not support the video tag.
+    </video>
