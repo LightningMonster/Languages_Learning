@@ -720,3 +720,5 @@ Using the poster Attribute:
     <video src="example.mp4" width="600" height="400" controls poster="thumbnail.jpg">
         Your browser does not support the video tag.
     </video>
+
+#--------------------------------------------------------------------
