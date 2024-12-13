@@ -1,7 +1,11 @@
 h1{
-    color:red
+    color:red;
+    text-align:center; 
+    text-decoration: underline;
 }
 
-p{
-    color:purple
+p {
+    color:purple;
+    text-align:center;    
 }
+
