@@ -1,0 +1,6 @@
+Variables, Data Types, Operators
+Control Structures: Loops (for, while, do-while), if-else, switch
+Functions: Declaration, Definition, Recursion
+Arrays and Strings
+Pointers: Basics, Pointer Arithmetic, Arrays and Pointers
+Dynamic Memory Allocation (malloc, calloc, realloc, free)
